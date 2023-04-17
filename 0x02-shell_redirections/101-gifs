@@ -1,0 +1,1 @@
+find . -type f -name "*.gif" | sed 's/.*\///; 's/\.gif$//' | sort -f | xargs -d '\n' -I{} echo {} | tr '[:upper:]' '[:lower:]'
