@@ -1,2 +1,2 @@
-$ cat An\ Acrostic |./acrostic.sh
-ELIZABETH
+#!/bin/bash
+cut -c 1 | paste -s -d ''

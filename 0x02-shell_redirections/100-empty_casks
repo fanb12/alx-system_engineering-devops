@@ -1,1 +1,1 @@
-find . -type d -name '.*' -empty -printf '%f\n' && find . -type f -name '.*' -empty -ptintf '%f\n'
+find . -empty | rev | cut -d '/' -f 1 | rev

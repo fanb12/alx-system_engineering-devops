@@ -1,4 +1,2 @@
 #!/bin/bash
-input=$(cat)
-output=$(echo "$input" |rev)
-echo "$output"
+rev
