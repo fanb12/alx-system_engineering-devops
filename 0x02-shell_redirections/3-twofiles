@@ -1,5 +1,2 @@
 #!/bin/bash
-echo "content of /etc/passwd:"
-cat /etc/passwd
-echo -e "\ncontent of /etc/hosts: "
-cat /etc/hosts
+cat /etc/passwd /etc/hosts
