@@ -1,2 +1,8 @@
 #!/bin/bash
-echo $((`echo $PATH | grep -0 ":/" | wc -1`+ 1)) 
+dir_count=$(echo $PATH | tr ':' '\n' | wc -l)
+
+ if [ -z "$(echo $PATH | grep -Eo ':+$')" ]; then
+  echo $(expr $dir_count)
+else
+  echo $(expr $dir_count - 1)
+fi
